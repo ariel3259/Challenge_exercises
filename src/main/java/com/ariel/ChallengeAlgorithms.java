@@ -8,7 +8,12 @@ public class ChallengeAlgorithms {
     Scanner scan = new Scanner(System.in);
 
     //Exercises one
-    //A functions that needs a number as param and returns a boolean
+
+    /**
+     *
+     * @param number integer
+     * @return boolean
+     */
     public boolean isACousinNumber(int number){
         int divisor = 2;
 
@@ -28,7 +33,12 @@ public class ChallengeAlgorithms {
     }
 
     //Exercises two
-    //Needs a password(String) as params and returns a boolean
+
+    /**
+     *
+     * @param password string
+     * @return boolean
+     */
     public boolean isTruePassword(String password ) {
         String confirmPassword = "";
         int count = 0;
@@ -50,7 +60,14 @@ public class ChallengeAlgorithms {
     }
 
     //Exercise 3
-    // Needs value(double), hours(int) and years(int) as params, returns a double(amount)
+
+    /**
+     *
+     * @param value double
+     * @param hours integer
+     * @param years integer
+     * @return double
+     */
     public double getAmountEmployee(double value, int hours, int years ){
         double amount = value * hours;
 
@@ -62,7 +79,12 @@ public class ChallengeAlgorithms {
     }
 
     //Exercise 4
-    //Needs a random number as param and returns nothing
+
+    /**
+     *
+     * @param randomNumber double
+     *
+     */
      public void findRandomNumber(double randomNumber){
         double number = 0;
 
@@ -88,6 +110,10 @@ public class ChallengeAlgorithms {
 
      //Exercise 5
 
+    /**
+     *
+     * @param number integer
+     */
      public void setNumbers(int number) {
         List<Integer> numbers = new LinkedList<>();
         numbers.add(number);

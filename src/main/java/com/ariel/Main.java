@@ -1,15 +1,15 @@
 package com.ariel;
 
-
 import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String [] args) {
-        ChallengeAlgorithms exercises = new ChallengeAlgorithms();
+
         Scanner scan = new Scanner(System.in);
-/* // Exercise one
+/*      ChallengeAlgorithms exercises = new ChallengeAlgorithms();
+// Exercise one
         int number = 0;
 
         //Inserts a number by keyboard
@@ -81,6 +81,9 @@ public class Main {
 
         exercises.setNumbers(number);
          */
+
+        /*
+        Challenge POO
         Password password = new Password(8);
 
         System.out.println(password.genPassword());
@@ -88,7 +91,11 @@ public class Main {
         System.out.println("Insert password");
         password.setPassword(scan.next());
         System.out.println(password.isStrong());
+    */
+
 
     }
+
+
 
 }

@@ -36,6 +36,11 @@ public class Password {
     };
 
     //Needs nothing and returns  a generated password
+
+    /**
+     *
+     * @return String
+     */
     public String genPassword(){
         String password = "";
         for(int i = 0; i < this.length; i++) {
@@ -57,6 +62,11 @@ public class Password {
     }
 
     //Validates if the password is strong
+
+    /**
+     *
+     * @return boolean
+     */
     public boolean isStrong(){
         int countLowerCaseLetter = 0;
         int countUpperCaseLetter = 0;
