@@ -68,21 +68,21 @@ public class Password {
      * @return boolean
      */
     public boolean isStrong(){
+
         int countLowerCaseLetter = 0;
         int countUpperCaseLetter = 0;
         int numbers = 0;
 
         for(int i = 0; i < this.password.length(); i++){
-            if(this.password.charAt(i) >=97 || this.password.charAt(i) <= 122){
+            int letter = this.password.codePointAt(i);
+            if(letter >=97 && letter <= 122){
                 countLowerCaseLetter += 1;
             }
-            else {
-                if(this.password.charAt(i) >= 65 || this.password.charAt(i) <= 90){
+            else if(letter >= 65 && letter <= 90){
                     countUpperCaseLetter += 1;
-                }
-                else{
-                    numbers += 1;
-                }
+            }
+            else{
+                numbers += 1;
             }
         }
 

@@ -82,17 +82,16 @@ public class Main {
         exercises.setNumbers(number);
          */
 
-        /*
-        Challenge POO
-        Password password = new Password(8);
 
-        System.out.println(password.genPassword());
-        System.out.println(password.isStrong());
+        //Challenge POO
+
+        Password password = new Password();
+
+
         System.out.println("Insert password");
         password.setPassword(scan.next());
-        System.out.println(password.isStrong());
-    */
 
+        System.out.println(password.isStrong()? "Your password is strong" : "Your password is weak");
 
     }
 
